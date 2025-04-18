@@ -9,7 +9,7 @@
     min-height: 100vh;
     overflow-x: hidden;
     background-color: #0a0c10;
-    color: white;
+    color: rgb(10, 10, 10);
   }
   
   .container-master {
@@ -25,20 +25,24 @@
   .container-header {
     max-width: 800px;
     width: 100%;
+  
   }
   
   .container-sobre {
     margin-top: 40px;
+    color: rgb(10, 0, 0)
   }
   
   .container-sobre h4 {
     margin-bottom: 8px;
     font-size: 1.5rem;
+    color: rgb(22, 11, 11)
   }
   
   .container-sobre p {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: rgb(10, 0, 0)
   }
   
   /* Botão */
