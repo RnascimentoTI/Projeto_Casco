@@ -1,17 +1,25 @@
-const form = document.querySelector('.foms-fale-conosco')
-const mascara = document.querySelector('.mascara-formulario')
-const fechamento = document.querySelector('.form-fale-conosco')
 
-function botaoClicado(){
-    form.style.left = "auto"
-    form.style.transform = "translateX(0%)"
-    form.style.transition = "1s"
-    mascara.style.visibility = "visible"
+
+// Seleciona os elementos do formulário e da máscara
+const form = document.querySelector('.foms-fale-conosco');
+const mascara = document.querySelector('.mascara-formulario');
+
+// Função para exibir o formulário
+function botaoClicado() {
+    form.style.visibility = 'visible'; // Torna visível
+    form.style.opacity = '1'; // Faz o formulário aparecer
+    form.style.transform = 'translate(-50%, -50%) scale(1)'; // Centraliza e expande o formulário
+    mascara.style.visibility = 'visible'; // Torna a máscara visível
+    mascara.style.opacity = '1'; // Faz a máscara aparecer
 }
 
-function fecharFormulario(){
-    form.style.left = "45%"
-    form.style.transform = "translateX(500%)"
-    form.style.transition = "1.3s"
-    mascara.style.visibility = "hidden"
+// Função para esconder o formulário
+function fecharFormulario() {
+    form.style.opacity = '0'; // Faz o formulário desaparecer
+    form.style.transform = 'translate(-50%, -50%) scale(0)'; // Reduz o formulário
+    form.style.visibility = 'hidden'; // Esconde o formulário após a animação
+    mascara.style.opacity = '0'; // Faz a máscara desaparecer
+    setTimeout(() => {
+        mascara.style.visibility = 'hidden'; // Esconde a máscara após a animação
+    }, 500); // Tempo correspondente ao `transition` do CSS
 }
