@@ -17,15 +17,23 @@ body {
     justify-content: space-evenly;
 }
 
-
 .container-img {
-    position: fixed;
+    position: relative; /* Corrigido para evitar problemas de sobreposição */
     z-index: -1;
-    top: 0;
-    width: 100%; /* Ajustado para ocupar toda a largura da tela */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    max-height: calc(100vh - 50px); /* Garante que a altura máxima não ultrapasse o viewport */
+    object-fit: cover; /* Ajusta o preenchimento sem distorção */
+    display: block;
 }
+
+.container-img img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta o preenchimento sem distorção */
+    display: block;
+}
+
 
 @media (max-width: 768px) {
     .container-img {
