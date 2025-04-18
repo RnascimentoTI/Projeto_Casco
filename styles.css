@@ -17,15 +17,30 @@ body {
     justify-content: space-evenly;
 }
 
-.container-sobre {
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 100px;
-    background: linear-gradient(to bottom, #333, #000);
+
+.container-img {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%; /* Ajustado para ocupar toda a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+}
+
+@media (max-width: 768px) {
+    .container-img {
+        position: relative; /* Ajuste para evitar problemas com posição fixa */
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .container-sobre h4 {
@@ -103,49 +118,4 @@ textarea {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-    .container-master {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .container-sobre {
-        margin-top: 50px;
-        padding: 10px;
-    }
-
-    button {
-        width: 100%;
-        font-size: 14px;
-        height: 40px;
-    }
-
-    .foms-fale-conosco {
-        width: 90%;
-        left: 5%;
-        top: 10%;
-        position: absolute;
-    }
-
-    input, textarea {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-master {
-        padding: 10px;
-    }
-
-    .container-sobre h4 {
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 10px;
-    }
 }
