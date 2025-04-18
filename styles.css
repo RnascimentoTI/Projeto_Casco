@@ -28,7 +28,7 @@ body {
 
 .container-img img {
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: 50px; /* Mantém a proporção da imagem */
+    height: 100%; /* Mantém a proporção da imagem */
     object-fit: cover; /* Ajusta o preenchimento sem distorção */
     display: block;
 }
