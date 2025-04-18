@@ -37,14 +37,7 @@ body {
 }
 
 
-
 .button {
-    display: block; /* Garante que o botão ocupe sua própria linha */
-    margin: 0 auto; /* Centraliza o botão horizontalmente */
-    position: absolute; /* Permite centralizar o botão verticalmente */
-    top: 50%; /* Move o botão para o meio da página verticalmente */
-    left: 50%; /* Move o botão para o meio da página horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o botão usando transform */
     color: white;
     background-color: #2b2929;
     border-radius: 4px;
@@ -53,8 +46,12 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 20px;
+    margin-left: 0;
     border: 2px solid #9FADD2;
+    align-self: center;
 }
+
 
 .button:hover {
     box-shadow: 0 0 5px #f5f5f8, 0 0 10px #2a2a2b, 0 0 20px #171718, 0 0 30px #545456;
