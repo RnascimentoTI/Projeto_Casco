@@ -38,7 +38,7 @@ body {
 
 
 
-button {
+.button {
     color: white;
     background-color: #2b2929;
     border-radius: 4px;
