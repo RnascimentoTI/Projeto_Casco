@@ -61,7 +61,7 @@ button:hover {
 
 
 
-foms-fale-conosco {
+.foms-fale-conosco {
     display: flex;
     flex-direction: column;
     background-color: white;
