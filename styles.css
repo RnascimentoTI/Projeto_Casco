@@ -37,7 +37,12 @@ body {
 
 @media (max-width: 768px) {
     .container-img {
-        position: relative; /* Ajuste para evitar problemas com posição fixa */
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .container-img img {
         width: 100%;
         height: auto;
     }
@@ -49,7 +54,7 @@ body {
         width: 100%;
         height: auto;
     }
-}
+
 
 .container-sobre h4 {
     margin-bottom: 3px;
