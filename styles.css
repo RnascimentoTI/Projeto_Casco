@@ -26,12 +26,6 @@ body {
     display: block;
 }
 
-.container-img img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Ajusta o preenchimento sem distorção */
-    display: block;
-}
 
 
 
