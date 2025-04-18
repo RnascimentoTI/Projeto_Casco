@@ -131,4 +131,8 @@ textarea {
     height: auto;
     width: 90%;
     }
+
+    .container-sobre h4 {
+    margin-bottom: 3px;
+}
 }
