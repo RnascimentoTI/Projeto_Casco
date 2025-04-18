@@ -1,4 +1,4 @@
-* {
+se* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 0;
     border: 2px solid #9FADD2;
     align-self: center;
