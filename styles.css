@@ -107,23 +107,7 @@ textarea {
 }
 
 @media(max-width: 768px) {
-    .icon {
-        display: none;
-    }
-
-    h4 {
-        display: none;
-    }
-    
-    p {
-        display: none;
-    }
-
-    .logo {
-        margin-top: -50px;
-    }
-
-    .container-master {
+     .container-master {
         padding: 35px;
         flex-direction: column;
         justify-content: flex-start;
