@@ -12,6 +12,7 @@ body {
 
 .container-master {
    display: flex;
+padding:20%
     flex-direction: column;
     align-items: center;
     justify-content: center;
