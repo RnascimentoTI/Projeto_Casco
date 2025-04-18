@@ -48,7 +48,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 0;
     border: 2px solid #9FADD2;
     align-self: center;
 }
