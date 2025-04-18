@@ -106,7 +106,7 @@ textarea {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
-@media(max-width: 950px) {
+@media(max-width: 768px) {
     .icon {
         display: none;
     }
@@ -150,4 +150,5 @@ textarea {
     margin-top: 20px;
     height: auto;
     width: 90%;
+}
 }
