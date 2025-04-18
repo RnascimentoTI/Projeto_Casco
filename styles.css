@@ -65,13 +65,16 @@ body {
 
 
 .foms-fale-conosco {
-    position: fixed; /* Para centralizar na tela */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden; /* Esconde inicialmente */
-    z-index: 10; /* Garante que fique acima de outros elementos */
-    transition: transform 1s, visibility 1s; /* Transições suaves */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 5px #f5f5f8, 0 0 10px #2a2a2b, 0 0 20px #171718, 0 0 30px #545456;
+    position: fixed;
+    padding: 15px;
+    border-radius: 5px;
+    gap: 10px;
+    top: 20%;
+    left: -100px;
 }
 
 input {
