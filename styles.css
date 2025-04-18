@@ -12,8 +12,11 @@ body {
 
 .container-master {
     display: flex;
-    padding: 80px;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
 }
 
 .container-img {
