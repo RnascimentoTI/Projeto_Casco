@@ -11,34 +11,35 @@
 
 <body>
 
-    <div class="container-master"
- <h4>Armazém - Requisição de Materiais!</h4>
-<p>Precisando de materiais? Esquece o papel! Agora você faz sua solicitação online, de onde estiver.</p>
+    <div class="container-master">
+        <div class="container-header">
 
+            <div class="container-sobre">
+                <!-- Logo comentado, pode ser descomentado se necessário -->
+                <!--<img src="./img/logo.png" alt="Logo do Armazém" class="logo">-->
+                <h4>Armazém - Requisição de Materiais!</h4>
+                <p>Precisando de materiais? Esqueça o papel! Agora você faz sua solicitação online, de onde estiver.</p>
 
+                <button onclick="botaoClicado()">Requisição</button>
+            </div>
 
-                 <button onclick="botaoClicado()">Requisição</button>
-</div>
-             
-   <div class="container-sobre" 
+        </div>
 
         <div class="container-img">
-            <img src="./img/Casco.png"></img>
-           
+            <!-- Adicionado alt para melhorar acessibilidade -->
+            <img src="./img/Casco.png" alt="Imagem ilustrativa do casco">
+            <div class="mascara"></div>
         </div>
-          </div>
-
-
 
         <div onclick="fecharFormulario()" class="mascara-formulario"></div>  
-            <form class="foms-fale-conosco"
+        <form class="foms-fale-conosco"
             action="https://formcarry.com/s/CQCMWqykwZZ"
             method="POST"
             enctype="multipart/form-data">
-            <input placeholder="Nome do solicitante" type="text" name="Nome do solicitante">
-            <input placeholder="Setor" type="text" name="Setor">
+            <input placeholder="Nome do solicitante" type="text" name="Nome do solicitante" required>
+            <input placeholder="Setor" type="text" name="Setor" required>
             
-            <textarea placeholder="Informe o material desejado..." name="Relação de Materiais"></textarea>
+            <textarea placeholder="Informe o material desejado..." name="Relação de Materiais" required></textarea>
             <button class="botao-envio" type="submit">Enviar</button>
         </form>
     </div>
