@@ -6,8 +6,8 @@
 }
 
 body {
-    height: 100px;
-    overflow-y: hidden;
+    height: 100vh; /* Ajustado para ocupar a altura total da tela */
+    overflow-y: auto; /* Permitir rolagem quando necessário */
 }
 
 .container-master {
@@ -17,7 +17,6 @@ body {
     justify-content: space-evenly;
 }
 
-
 .container-sobre {
     width: 100%;
     color: #ffffff;
@@ -26,7 +25,7 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 100px;
-     background: linear-gradient;
+    background: linear-gradient(to bottom, #333, #000); /* Adicionado gradiente */
 }
 
 .container-sobre h4 {
@@ -37,18 +36,17 @@ body {
     position: fixed;
     z-index: -1;
     top: 0;
+    width: 100%; /* Ajustado para responsividade */
+    height: auto;
 }
-
-
 
 .mascara {
     position: fixed;
-    width: 110%;
+    width: 100%; /* Ajustado para responsividade */
     height: 100%;
     top: 0;
     left: 0;
 }
-
 
 button {
     color: white;
@@ -60,10 +58,9 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 20px;
-    margin-left: 0px;
+    margin-left: 0;
     border: 2px solid #9FADD2;
     align-self: center;
-
 }
 
 button:hover {
@@ -76,7 +73,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0 0 5px #f5f5f8, 0 0 10px #2a2a2b, 0 0 20px #171718, 0 0 30px #545456;;
+    box-shadow: 0 0 5px #f5f5f8, 0 0 10px #2a2a2b, 0 0 20px #171718, 0 0 30px #545456;
     position: fixed;
     padding: 15px;
     border-radius: 5px;
@@ -89,12 +86,14 @@ input {
     height: 33px;
     padding-left: 5px;
     outline-color: #E60012;
+    width: 100%; /* Ajustado para responsividade */
 }
 
 textarea {
     padding-left: 5px;
     outline-color: #E60012;
     height: 85px;
+    width: 100%; /* Ajustado para responsividade */
 }
 
 .mascara-formulario {
@@ -104,4 +103,49 @@ textarea {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .container-master {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-sobre {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .foms-fale-conosco {
+        width: 90%;
+        left: 5%;
+        top: 10%;
+        position: absolute;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-master {
+        padding: 10px;
+    }
+
+    .container-sobre h4 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
