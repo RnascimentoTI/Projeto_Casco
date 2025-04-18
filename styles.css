@@ -107,17 +107,47 @@ textarea {
 }
 
 @media(max-width: 950px) {
-       h4 {
+    .icon {
+        display: none;
+    }
+
+    h4 {
         display: none;
     }
     
     p {
         display: none;
     }
- 
+
+    .logo {
+        margin-top: -50px;
+    }
+
     .container-master {
         padding: 35px;
         flex-direction: column;
         justify-content: flex-start;
     }
+
+    header {
+        display: flex;
+        padding: 35px;
+        gap: 25px;
+        align-items: center;
+        text-align: center;
+    }
+
+        header a {
+        font-size: 18px;
+    }
+
+    .container-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+.irmaos {
+    margin-top: 20px;
+    height: auto;
+    width: 90%;
 }
